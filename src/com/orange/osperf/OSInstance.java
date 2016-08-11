@@ -34,7 +34,7 @@ public class OSInstance implements Runnable {
     //these values were calculated using a real OpenStack deployment. More 
     //details about this research can be found in our paper "towards a 
     //massively distributed IaaS operating system: composition and evaluation of
-    //OpenStack" published in IEEE CSCN conference (2016).
+    //OpenStack" submitted to IEEE CSCN conference (2016).
     //
     //RPC size: CPU node heartbeats (0 VN 0 VM)
     private final int NOVA_OA         = 1890;
