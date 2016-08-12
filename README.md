@@ -1,8 +1,8 @@
 <h2>OSPerf</h2>
-<p>OSPerf is an emulates AMQP flow of one or more OpenSTack instances.
+<p>OSPerf emulates AMQP flow of one or more OpenSTack instances.
 The goal is to test the performance of RabbitMQ in a mult-site 
 context.</p>
-<pOSPerf is based on the PerfTest performance tester of RabbitMQ
+<p>OSPerf is based on the PerfTest performance tester of RabbitMQ
 (can be found here: https://www.rabbitmq.com/java-tools.html).</p>
 
 <ul>
