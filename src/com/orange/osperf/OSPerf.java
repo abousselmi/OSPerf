@@ -32,8 +32,8 @@ public class OSPerf {
 //            new PerfTestGen().start();
 //            //PerfTest.main(new String[]{"-a", "-z5", "-hamqp://ayoub:ayoub@10.193.71.173"});
 //        }
-//        OSInstance osi = new OSInstance("OpenStack-1");
-//        osi.startInstance();
+        OSInstance osi = new OSInstance("OpenStack-1",5,0,0,0,0);
+        osi.startInstance();
         
     }
     
