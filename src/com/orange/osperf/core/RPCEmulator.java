@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.orange.osperf;
+package com.orange.osperf.core;
 
 import com.rabbitmq.examples.PerfTest;
 
@@ -25,17 +25,20 @@ import com.rabbitmq.examples.PerfTest;
 public class RPCEmulator implements Runnable {
 
     //if no arguments are provided print PerfTest usage and exits
-    private final String[] args;
+    private final String[] perfTestArgs;
     
     /**
      * Constructor of a Remote Procedure Call flow Emulator using PerfTest.
-     * @param perfTestArgs the PerfTest command line arguments
+     * @param args the PerfTest command line arguments
      */
-    public RPCEmulator(String[] perfTestArgs) {
-        if(perfTestArgs != null)
-            args = perfTestArgs;
-        else
-            args = new String[]{"-?"};
+    public RPCEmulator(String[] args) {
+        
+        if(args != null) {
+            perfTestArgs = new String[args.length];
+            //perfTestArgs = args;
+            System.arraycopy(args, 0, perfTestArgs, 0, args.length );
+        }else
+            perfTestArgs = new String[]{"-?"};
     }
     
     /**
@@ -43,7 +46,7 @@ public class RPCEmulator implements Runnable {
      */
     @Override
     public void run() {
-        PerfTest.main(args);
+        PerfTest.main(perfTestArgs);
     }
     
     public void startRPCEmulation() {
