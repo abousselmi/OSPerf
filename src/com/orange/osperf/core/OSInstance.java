@@ -153,10 +153,6 @@ public class OSInstance implements Runnable {
     //For more details about PerfTest, please visit:
     //https://www.rabbitmq.com/java-tools.html
     //Vatiable args (external):
-    
-    
-    
-    
     private final String _h;  //connection uri
     private final String _i;  //sampling time window
     private final String _z;  //run duration in seconds (0 for unlimited)
