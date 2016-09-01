@@ -31,9 +31,6 @@ import org.apache.commons.cli.ParseException;
  */
 public class OSPerf {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
 
         Options options = getOptions();
@@ -58,7 +55,6 @@ public class OSPerf {
             
             String connectionURI = "amqp://" + user + ":" + pass + "@" + hostip;
             
-            //create and start an OpenStack node emulation instance
             OSInstance osi = new OSInstance(osInstanceID, nodeType, 
                     nbrCPUNodes, nbrVNets, nbrVMPerCPUNode,
                     connectionURI, statsInterval, testDuration);

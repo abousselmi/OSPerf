@@ -24,26 +24,17 @@ import com.rabbitmq.examples.PerfTest;
  */
 public class RPCEmulator implements Runnable {
 
-    //if no arguments are provided print PerfTest usage and exits
     private final String[] perfTestArgs;
     
-    /**
-     * Constructor of a Remote Procedure Call flow Emulator using PerfTest.
-     * @param args the PerfTest command line arguments
-     */
     public RPCEmulator(String[] args) {
         
         if(args != null) {
             perfTestArgs = new String[args.length];
-            //perfTestArgs = args;
             System.arraycopy(args, 0, perfTestArgs, 0, args.length );
         }else
             perfTestArgs = new String[]{"-?"};
     }
     
-    /**
-     * Do not use this method directly.<br> Use startRPCEmulation() instead.
-     */
     @Override
     public void run() {
         PerfTest.main(perfTestArgs);
