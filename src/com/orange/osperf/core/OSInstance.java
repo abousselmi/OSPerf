@@ -247,11 +247,11 @@ public class OSInstance implements Runnable {
     public void run() {
         if(isCtrl) {
             System.out.println(instanceStartTime
-                    +", starting \"ctrl\" node of instance \"" 
+                    +", starting \"ctrl\" node for instance \"" 
                     + osInstanceName+"\"");
         }else {
             System.out.println(instanceStartTime+", starting " + nbrCPUNodes +
-                    " \"cpu\" node" + (nbrCPUNodes > 1 ? "s" : "") + " of"
+                    " \"cpu\" node" + (nbrCPUNodes > 1 ? "s" : "") + " for"
                     + " instance \"" + osInstanceName+"\"");
         }
         for (int i = 0; i < nbrCPUNodes; i++) {
