@@ -1,5 +1,5 @@
 <h2>OSPerf</h2>
-<p>OSPerf emulates AMQP flow of one or more OpenSTack instances.
+<p>OSPerf emulates AMQP flow of one or more OpenStack instances.
 The goal is to test the performance of RabbitMQ in a mult-site 
 context.</p>
 <p>OSPerf is based on the PerfTest performance tester of RabbitMQ
